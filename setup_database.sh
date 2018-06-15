@@ -6,6 +6,6 @@
 #mysql zurmo < /zurmo.sql
 #service mysql stop
 
-mysqld_safe
+chown -R mysql:mysql /var/lib/mysql
 
-tail -f /var/log/syslog
+mysqld_safe
