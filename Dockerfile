@@ -19,7 +19,6 @@ RUN \
 
 ADD my.cnf /etc/mysql/my.cnf
 ADD setup_database.sh /
-ADD *.sql /
 RUN chmod +x /setup_database.sh
 
 VOLUME ["/etc/mysql", "/var/lib/mysql", "/var/log"]
