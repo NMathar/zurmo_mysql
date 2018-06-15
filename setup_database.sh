@@ -7,3 +7,5 @@
 #service mysql stop
 
 mysqld_safe
+
+tail -f /var/log/syslog

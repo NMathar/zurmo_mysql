@@ -28,7 +28,7 @@ VOLUME ["/etc/mysql", "/var/lib/mysql", "/var/log"]
 WORKDIR /data
 
 # Define default command.
-CMD ["mysqld_safe", "/bin/bash /setup_database.sh" , "tail -f /var/log/syslog"]
+CMD ["mysqld_safe", "/bin/bash /setup_database.sh"]
 
 # Expose ports.
 EXPOSE 3306
